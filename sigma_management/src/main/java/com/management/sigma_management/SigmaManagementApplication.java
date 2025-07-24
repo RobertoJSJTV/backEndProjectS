@@ -1,13 +1,13 @@
-package com.management.Sigma_Manager;
+package com.management.sigma_management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SigmaManagerApplication {
+public class SigmaManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SigmaManagerApplication.class, args);
+		SpringApplication.run(SigmaManagementApplication.class, args);
 	}
 
 }

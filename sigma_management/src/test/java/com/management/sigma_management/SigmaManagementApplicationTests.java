@@ -1,10 +1,10 @@
-package com.management.Sigma_Manager;
+package com.management.sigma_management;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SigmaManagerApplicationTests {
+class SigmaManagementApplicationTests {
 
 	@Test
 	void contextLoads() {

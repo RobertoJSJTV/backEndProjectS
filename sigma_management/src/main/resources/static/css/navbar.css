@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #6592c4;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #3e6ea5;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #2e5b8d;
+}
+
+.burguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.burguer span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    display: block;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #4785cb;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #search-form {
+
+    }
+
+    .burguer {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 49px;
+        right: 0;
+        background-color: #6592c4;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 768px) {
+
+
+    .search-form {
+        display: none;
+        order: 3; /* Coloca a busca abaixo da logo e do menu burguer */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-form input[type="text"] {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .search-form button {
+        width: 20%;
+        font-size: 16px;
+    }
+}
